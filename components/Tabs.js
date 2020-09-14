@@ -13,7 +13,7 @@ const topicsClass = document.querySelector('.topics')
 
 axios.get('https://lambda-times-api.herokuapp.com/topics')
 .then((goodResponse) => {
-    console.log('tab data' , goodResponse)
+    // console.log('tab data' , goodResponse)
     goodResponse.data.topics.forEach((topics) => {
         let divTab=document.createElement('tab')
         divTab.classList.add('tab')
