@@ -59,7 +59,7 @@ const cardWrap = document.createElement('div');
 return cardWrap;
 }
 
-axios.get('https://lambda-timeass-api.herokuapp.com/articles')
+axios.get('https://lambda-times-api.herokuapp.com/articles')
     .then((goodResponse) => {
         log('card response here' , goodResponse);
         const responseArray = Object.values(goodResponse.data.articles)
